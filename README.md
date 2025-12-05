@@ -15,22 +15,6 @@ Tested on:
 
 ---
 
-## 📦 One-Line Installer (curl or wget)
-
-Install USB Pi OS Launcher without cloning the repo:
-
-### **curl**
-```bash
-bash <(curl -s https://raw.githubusercontent.com/comp6062/usb-pi-os-launcher/main/install-online.sh)
-```
-
-### **wget**
-```bash
-bash <(wget -qO- https://raw.githubusercontent.com/comp6062/usb-pi-os-launcher/main/install-online.sh)
-```
-
----
-
 ## Features
 
 - ✅ Interactive partition picker using `lsblk`  
@@ -58,20 +42,19 @@ The installer will automatically install `systemd-container` if it's missing.
 - `usb-pi-os.sh` – Main launcher script (menu-driven, picks drive and mode)
 - `install-usb-pi-os-launcher.sh` – Installer that:
   - Installs the main script to `/usr/local/bin/usb-pi-os`
-  - Installs a wrapper `/usr/local/bin/usb-pi-os-launch`
+  - Installs a wrapper launcher `/usr/local/bin/usb-pi-os-launch`
   - Installs the icon to `/usr/share/icons/usb-pi-os.png`
   - Creates `usb-pi-os.desktop` for the Raspberry Pi menu
-- `install-online.sh` – One-line curl/wget installer
 - `icon/usb-pi-os.png` – 3D dark neon "USB Pi OS" app icon
 
 ---
 
-## Installation (manual / from clone)
+## Installation
 
 Clone or copy this repo onto your Raspberry Pi:
 
 ```bash
-git clone https://github.com/comp6062/usb-pi-os-launcher.git
+git clone https://github.com/your-user/usb-pi-os-launcher.git
 cd usb-pi-os-launcher
 ```
 

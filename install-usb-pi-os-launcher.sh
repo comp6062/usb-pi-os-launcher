@@ -17,6 +17,7 @@ WRAPPER_NAME="usb-pi-os-launch"
 ICON_NAME="usb-pi-os.png"
 ICON_TARGET="/usr/share/icons/${ICON_NAME}"
 DESKTOP_FILE="/usr/share/applications/usb-pi-os.desktop"
+MOUNT_POINT="/mnt/pi-os-root"
 
 require_root() {
   if [[ $EUID -ne 0 ]]; then
@@ -69,7 +70,7 @@ EOF
   cat << EOF > "${DESKTOP_FILE}"
 [Desktop Entry]
 Name=${APP_NAME}
-Comment=Boot and explore USB/SD Raspberry Pi OS installations safely without rebooting
+Comment=Boot any connected OS partition in a systemd-nspawn container
 Exec=/usr/local/bin/${WRAPPER_NAME}
 Icon=${ICON_TARGET}
 Terminal=false
