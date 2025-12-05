@@ -82,7 +82,8 @@ select_device() {
     local dev="${DEVICES[$i]}"
     local size="${SIZES[$i]}"
     local mnt="${MOUNTS[$i]:--}"
-    printf "  %2d) %-12s  %-8s  %s\n" "$((i+1))" "$dev" "$size" "$mnt"
+    printf "  %2d) %-12s  %-8s  %s
+" "$((i+1))" "$dev" "$size" "$mnt"
   done
 
   echo
