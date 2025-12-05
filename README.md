@@ -21,12 +21,12 @@ Install USB Pi OS Launcher without cloning the repo:
 
 ### **curl**
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/YOUR-USER/usb-pi-os-launcher/main/install-online.sh)
+bash <(curl -s https://raw.githubusercontent.com/comp6062/usb-pi-os-launcher/main/install-online.sh)
 ```
 
 ### **wget**
 ```bash
-bash <(wget -qO- https://raw.githubusercontent.com/YOUR-USER/usb-pi-os-launcher/main/install-online.sh)
+bash <(wget -qO- https://raw.githubusercontent.com/comp6062/usb-pi-os-launcher/main/install-online.sh)
 ```
 
 ---
